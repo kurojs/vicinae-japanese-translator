@@ -1,0 +1,111 @@
+{
+  "name": "japanese-translator",
+  "title": "Japanese Translator",
+  "description": "Quick Japanese translator with Anki integration",
+  "icon": "icon.svg",
+  "author": "kuro",
+  "license": "MIT",
+  "categories": ["Productivity", "Education"],
+  "commands": [
+    {
+      "name": "translate",
+      "title": "Translate",
+      "subtitle": "Japanese",
+      "description": "Translate Japanese text and add to Anki",
+      "mode": "view"
+    }
+  ],
+  "preferences": [
+    {
+      "name": "ankiDeck",
+      "title": "Anki Deck Name",
+      "description": "The name of your Anki deck for Japanese vocabulary",
+      "type": "textfield",
+      "required": true,
+      "default": "CUSTOM TRANSLATE"
+    },
+    {
+      "name": "ankiModel",
+      "title": "Anki Note Type/Model",
+      "description": "The note type to use (e.g., Basic-d5482, MIA Japanese)",
+      "type": "textfield",
+      "required": false,
+      "default": "Basic-d5482"
+    },
+    {
+      "name": "ankiPort",
+      "title": "AnkiConnect Port",
+      "description": "Port where AnkiConnect is running",
+      "type": "textfield",
+      "required": false,
+      "default": "8765"
+    },
+    {
+      "name": "voicevoxPort",
+      "title": "VoiceVox Port",
+      "description": "Port where VoiceVox is running",
+      "type": "textfield",
+      "required": false,
+      "default": "50021"
+    },
+    {
+      "name": "voicevoxSpeaker",
+      "title": "VoiceVox Speaker ID",
+      "description": "Speaker ID to use for Japanese audio (1-50+)",
+      "type": "textfield",
+      "required": false,
+      "default": "1"
+    },
+    {
+      "name": "sourceLang",
+      "title": "Source Language",
+      "description": "Language to translate from",
+      "type": "dropdown",
+      "required": false,
+      "default": "ja",
+      "data": [
+        { "title": "Japanese", "value": "ja" },
+        { "title": "Auto-detect", "value": "auto" }
+      ]
+    },
+    {
+      "name": "targetLang",
+      "title": "Target Language",
+      "description": "Language to translate to",
+      "type": "dropdown",
+      "required": false,
+      "default": "en",
+      "data": [
+        { "title": "English", "value": "en" },
+        { "title": "Spanish", "value": "es" },
+        { "title": "French", "value": "fr" },
+        { "title": "German", "value": "de" },
+        { "title": "Italian", "value": "it" },
+        { "title": "Portuguese", "value": "pt" },
+        { "title": "Russian", "value": "ru" },
+        { "title": "Korean", "value": "ko" },
+        { "title": "Chinese (Simplified)", "value": "zh-CN" },
+        { "title": "Chinese (Traditional)", "value": "zh-TW" }
+      ]
+    },
+    {
+      "name": "autoLoadText",
+      "title": "Auto-load selected text",
+      "description": "Automatically load selected text from clipboard",
+      "type": "checkbox",
+      "required": false,
+      "default": true
+    }
+  ],
+  "dependencies": {
+    "@vicinae/api": "^0.8.2",
+    "undici": "^5.12.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  },
+  "scripts": {
+    "build": "vici build",
+    "dev": "vici develop"
+  }
+}
