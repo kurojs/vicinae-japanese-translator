@@ -1,21 +1,8 @@
-# Japanese Translator for Vicinae ⛩️
-
-<div align="center">
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Platform](https://img.shields.io/badge/Platform-Arch_Linux-1793D1?logo=archlinux&logoColor=white)](https://archlinux.org/)
-[![Vicinae](https://img.shields.io/badge/Vicinae-Extension-6366f1)](https://github.com/vicinaehq/vicinae)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Anki](https://img.shields.io/badge/Anki-Integration-17a2b8)](https://apps.ankiweb.net/)
-[![VoiceVox](https://img.shields.io/badge/VoiceVox-TTS-00d4aa)](https://voicevox.hiroshiba.jp/)
-
-</div>
-
----
+# Japanese Translator for Vicinae 🗾
 
 A translation extension for [Vicinae](https://github.com/vicinaehq/vicinae) that streamlines Japanese vocabulary mining with instant translation, Anki integration, and VoiceVox audio synthesis.
 
-![Extension Interface](https://i.imgur.com/MlF18ld.png)
+![extension](https://kurojs.github.io/AssetHub/images/extension_optimized.gif)
 
 ## Overview
 
